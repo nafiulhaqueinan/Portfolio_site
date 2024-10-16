@@ -3,6 +3,7 @@ import "./globals.css";
 import { Variable, Weight } from "lucide-react";
 //componants
 import Header from "@/components/Header";
+import PageTransition from "@/components/PageTransition";
 
 const jetBrainsMono = JetBrainsMono({ 
   subsets: ["latin"],
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={jetBrainsMono.variable}>
         <Header />
-        {children}
+        <PageTransition/>{children}</PageTransition>
         </body>
     </html>
   );
