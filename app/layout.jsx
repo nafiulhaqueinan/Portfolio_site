@@ -17,7 +17,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={jetBrainsMono.variable}>
         <Header />
-        <div>check if show up</div>
         <StairTransition />
         <PageTransition>{children}</PageTransition>
         </body>
