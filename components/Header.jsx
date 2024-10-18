@@ -3,6 +3,8 @@ import { Button } from "./ui/button"
 
 //components
 import Nav from "./Nav";
+import MobileNav from './MobileNav';
+
 
 const Header=()=>{
     return(
