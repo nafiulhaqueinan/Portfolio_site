@@ -4,6 +4,7 @@ import { Variable, Weight } from "lucide-react";
 //componants
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
+import StairTransition from "@/components/StairTransition";
 
 const jetBrainsMono = JetBrainsMono({ 
   subsets: ["latin"],
@@ -16,6 +17,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={jetBrainsMono.variable}>
         <Header />
+        <div>check if show up</div>
+        <StairTransition />
         <PageTransition>{children}</PageTransition>
         </body>
     </html>
