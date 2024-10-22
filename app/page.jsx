@@ -4,6 +4,7 @@ import{FiDownload} from "react-icons/fi";
 
 // social alllink found here
 import Social from "@/components/ui/Social"
+import Photo from "@/components/ui/Photo";
 
 const Home = () =>{
   return(
@@ -12,7 +13,7 @@ const Home = () =>{
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           
           {/*text*/}
-          <div className="text-center xl:text-left">
+          <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-x1">Software Engineer</span>
             <h1 className="h1 mb-6">
               Hello I'm<br/> <span className="text-accent">Md. Nafiul Haque</span>
@@ -40,7 +41,9 @@ const Home = () =>{
 
 
           {/*photo*/}
-          <div>photo</div>
+          <div className="order-1 xl:order-none mb-8 xl:mb-8">
+            <Photo />
+          </div>
 
 
         </div>
