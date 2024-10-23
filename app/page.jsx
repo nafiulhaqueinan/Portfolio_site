@@ -5,6 +5,7 @@ import{FiDownload} from "react-icons/fi";
 // social alllink found here
 import Social from "@/components/ui/Social"
 import Photo from "@/components/ui/Photo";
+import Stats from "@/components/Stats";
 
 const Home = () =>{
   return(
@@ -48,6 +49,7 @@ const Home = () =>{
 
         </div>
       </div>
+      <Stats/>
     </section>
   );
 };
