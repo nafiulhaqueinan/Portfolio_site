@@ -19,7 +19,12 @@ const stats = [
     num: 800,
     text: "Code commits",
   },
+  {
+    num: 2,
+    text: "Research Paper",
+  },
 ];
+
 
 const Stats = () => {
   return (
