@@ -1,20 +1,18 @@
 "use client";
 
 import { 
-    FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs 
+    FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs,FaJava ,FaTerminal
 } from "react-icons/fa";
 import { 
-    SiCplusplus, SiPython, SiTensorflow, SiScikitlearn, SiJava, SiMysql, SiCsharp, SiGit, SiIntellijidea, SiGithub, SiPycharm, SiVisualstudiocode, SiWindows, SiLinux, SiArchlinux 
+    SiCplusplus, SiPython, SiTensorflow, SiScikitlearn, SiMysql, SiCsharp, SiGit, SiIntellijidea, SiGithub, SiPycharm, SiVisualstudiocode, SiWindows, SiLinux, SiArchlinux 
 } from "react-icons/si";
-import { 
-    DiBash, DiDocker 
-} from "react-icons/di";
+
 import { Description } from "@radix-ui/react-dialog";
 
 const about={
-    title:'About',
+    title:"About",
     Description:
-    "Hello! I'm Nafiul Haque, a passionate and dedicated Computer Science and Engineering student at American International University Bangladesh (AIUB). With a strong foundation in data science, .NET, advanced web technology, and competitive programming, I continuously strive to expand my expertise. I’ve also completed professional courses in AI and Product Management, which help me approach projects with a balanced perspective of both innovation and practicality. I am currently building my portfolio to showcase my skills and projects as I work toward a future in the tech industry.",
+    "Hello! Im Nafiul Haque, a passionate and dedicated Computer Science and Engineering student at American International University Bangladesh (AIUB). With a strong foundation in data science, .NET, advanced web technology, and competitive programming, I continuously strive to expand my expertise. I’ve also completed professional courses in AI and Product Management, which help me approach projects with a balanced perspective of both innovation and practicality. I am currently building my portfolio to showcase my skills and projects as I work toward a future in the tech industry.",
     info:[
     {
         fieldName:"Name",
@@ -117,59 +115,59 @@ const skills={
         
         {
             icon:<SiCplusplus/>,
-            name:'C++', 
+            name:"C++", 
         },
         {
             icon:<SiPython/> ,
-            name:'Python', 
+            name:"Python", 
         },
         {
             icon:<SiTensorflow/>,
-            name:'Tensorflow', 
+            name:"Tensorflow", 
         },
         {
             icon: <SiScikitlearn/>,
-            name:'Scikitlearn', 
+            name:"Scikitlearn", 
         },
         {
-            icon: <SiJava/>,
-            name:'Java', 
+            icon: <FaJava/>,
+            name:"Java", 
         },
         {
             icon: <SiMysql/>,
-            name:'Mysql', 
+            name:"Mysql", 
         },
         {
             icon: <SiCsharp/>,
-            name:'C#', 
+            name:"C#", 
         },
         {
-            icon: <DiBash/>,
-            name:'Bash', 
+            icon: <FaTerminal/>,
+            name:"Bash", 
         },
         {
             icon:<FaHtml5/>,
-            name:'Html 5',
+            name:"Html 5",
         },
         {
             icon: <FaCss3/>,
-            name:'Css', 
+            name:"Css", 
         },
         {
             icon:<FaReact/> ,
-            name:'React', 
+            name:"React", 
         },
         {
             icon: <FaJs/>,
-            name:'JavaScript', 
+            name:"JavaScript", 
         },
         {
             icon:<SiGithub/> ,
-            name:'Github', 
+            name:"Github", 
         },
         {
             icon:<SiArchlinux/> ,
-            name:'Arch linux', 
+            name:"Arch linux", 
         },
 
     ],
@@ -177,34 +175,35 @@ const skills={
 
 const research={
     title:"My Research Paper",
+    discription:"Throughout my academic journey, I have engaged in impactful research projects that bridge theory with practical applications in technology and data science. My recent work includes studies on enhancing the scalability and efficiency of cryptocurrency systems.",
     items:[
         {
             Topic:"Improtance of Research in Undergraduate Level",
-            year:"2024",
-            Domain:"Statistics",
-            Supervised:"Dr.Ummey Aysha"
+            year:"Year: 2024",
+            Domain:"Domain: Statistics",
+            Supervised:"Supervised: Dr.Ummey Aysha"
         },
         {
             Topic:"Revamping Cryptocurrency Systems for Improved Efficiency and Scalability",
-            year:"2024",
-            Domain:"Computer Science",
-            Supervised:"Faruk Abdullha Al Shohan"
+            year:"Year: 2024",
+            Domain:"Domain: Computer Science",
+            Supervised:"Supervised: Faruk Abdullha Al Shohan"
         },
     ],
 };
 
-import { Tabs, TabsContent,TabsList,TabsTrigger } from "@radix-ui/react-tabs";
+import { Tabs, TabsContent,TabsList,TabsTrigger } from "@/components/ui/tabs";
 
-import { Tooltip,TooltipContent,TooltipProvider,TooltipTrigger } from "@radix-ui/react-tooltip";
+import { Tooltip,TooltipContent,TooltipProvider,TooltipTrigger } from "@/components/ui/tooltip";
 
-import { ScrollArea } from "@radix-ui/react-scroll-area";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 import { motion } from "framer-motion";
 
 const Resume = () =>{
     return (
         <motion.div
-        initial={{opacity:0}}
+        initial={{opacity: 0}}
         animate={{
             opacity:1,
             transition:{delay:2.4,duration:0.4,ease:"easeIn"},
@@ -214,15 +213,151 @@ const Resume = () =>{
             <div className="container mx-auto">
                 <Tabs
                 defaultValue="experience"
-                className="flex flex-col xl:flex-row gap-[50px]"
+                className="flex flex-col xl:flex-row gap-[60px]"
                 >
-                    <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0">
+                    <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
                         <TabsTrigger value="experience">Experience</TabsTrigger>
                         <TabsTrigger value="education">Education</TabsTrigger>
                         <TabsTrigger value="skills">Skills</TabsTrigger>
                         <TabsTrigger value="research">Research Paper</TabsTrigger>
                         <TabsTrigger value="about">About me</TabsTrigger>
                     </TabsList>
+                    {/* content */}
+                    <div className="min-h-[70vh] w-full">
+                        {/* experience */}
+                        <TabsContent value="experience" className="w-full">
+                            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                                <h3 className="text-4xl font-bold">{experience.title}</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                                {experience.Description}
+                                </p>
+                                <ScrollArea className="h-[400px]">
+                                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                                        {experience.items.map((item,index)=>{
+                                            return(
+                                                <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 ">
+                                                    <span className="text-accent">{item.duration}</span>
+                                                    <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                                                    <div className="flex items-center gap-3">
+                                                        <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                                                        <p className="text-white/60">{item.company}</p>
+                                                    </div>
+                                                </li>
+                                            );
+                                        })}
+                                    </ul>
+                                </ScrollArea>
+                            </div>
+                        </TabsContent>
+
+
+                        {/* Education */}
+                        <TabsContent value="education" className="w-full">
+                        <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                                <h3 className="text-4xl font-bold">{education.title}</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                                {education.Description}
+                                </p>
+                                <ScrollArea className="h-[400px]">
+                                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                                        {education.items.map((item,index)=>{
+                                            return(
+                                                <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 ">
+                                                    <span className="text-accent">{item.duration}</span>
+                                                    <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.Degree}</h3>
+                                                    <div className="flex items-center gap-3">
+                                                        {/* dots */}
+                                                        <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                                                        <p className="text-white/60">{item.institution}</p>
+                                                    </div>
+                                                </li>
+                                            );
+                                        })}
+                                    </ul>
+                                </ScrollArea>
+                        </div>
+                        </TabsContent>
+
+
+                         {/* Skills */}
+                         <TabsContent value="skills" className="w-full h-full">
+                         <div className="flex flex-col gap-[30px]">
+                            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                                <h3 className="text-4xl font-bold">{skills.title}</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                                {skills.discription}
+                                </p>
+                            </div>
+                            <ul className="grid frid-col-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                                {skills.skillList.map((skill,index) => {
+                                    return <li key={index} >
+                                         <TooltipProvider delayDuration={100}>
+                                            <Tooltip>
+                                                <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                                    <div className="text-6xl group-hover:text-accent transition-all duration-300 ">{skill.icon}</div>
+                                                </TooltipTrigger>
+                                                <TooltipContent>
+                                                    <p className="capitalize">{skill.name}</p>
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider> 
+                                         </li>;
+                                })}
+                            </ul>
+                         </div>
+                        </TabsContent>
+
+
+                         {/* Research */}
+                         <TabsContent value="research" className="w-full">
+                         <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                                <h3 className="text-4xl font-bold">{research.title}</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                                {research.discription}
+                                </p>
+                                <ScrollArea className="h-[450px]">
+                                    <ul className="grid grid-cols-1 gap-[30px]">
+                                        {research.items.map((item,index)=>{
+                                            return(
+                                                <li key={index} className="bg-[#232329] h-[200px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 ">
+                                                    <span className="text-accent text-xl">{item.Topic}</span>
+                                                    <span className="text-accent">{item.year}</span>
+                                                    <h3 className="text-base max-w-[230px] min-h-[30px] text-center lg:text-left">{item.Domain}</h3>
+                                                    <div className="flex items-center gap-3">
+                                                        {/* dots */}
+                                                        <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                                                        <p className="text-white/60">{item.Supervised}</p>
+                                                    </div>
+                                                </li>
+                                            );
+                                        })}
+                                    </ul>
+                                </ScrollArea>
+                        </div>
+                        </TabsContent>
+
+
+                         {/* About */}
+                         <TabsContent value="about" className="w-full text-center xl:text-left">
+                         <div className="flex flex-col gap-[30px]">
+                            <h3 className="text-4xl font-bold">{about.title}</h3>
+                            <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.Description}</p>
+                            <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                                {about.info.map((item,index) =>{
+                                    return(
+                                        <li 
+                                        key={index}
+                                        className="flex items-center justify-center xl:justify-start gap-4"
+                                        >
+                                            <span className="text-accent">{item.fieldName}</span>
+                                            <span className="text-xl">{item.fieldValue}</span>
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                         </div>
+                        </TabsContent>
+                     </div>
                 </Tabs>
             </div>
 
