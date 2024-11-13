@@ -52,18 +52,18 @@ const experience ={
     "While I am currently a student at American International University Bangladesh (AIUB), I am actively building a strong foundation in Computer Science and Engineering through hands-on projects, coursework, and competitive programming. My focus includes Data Science, .NET, Advanced Web Technology, and AI, supported by courses from Google and personal projects that demonstrate my dedication to skill development. This section will soon showcase my professional experiences as I look forward to making an impact in the tech industry.",
     items:[
         {
-            company:"Personal learning assistant",
-            position:"Tutor",
+            company:"Privet Tutor",
+            position:"Personal learning assistant",
             duration:"2022-Now "
         },
         {
-            company:"Specialist on codeforces",
-            position:"Problem Solver",
+            company:"Problem Solver",
+            position:"Specialist on codeforces",
             duration:"2023-Now "
         },
         {
-            company:"Cisco IoT Hakathone Finalist",
-            position:"Technical Lead",
+            company:"Technical Lead",
+            position:"Cisco IoT Hakathone Finalist",
             duration:"July-Oct(2024)"
         },
     ],
