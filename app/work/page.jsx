@@ -61,7 +61,7 @@ const projects=[
     },
 ];
 
-const work = () =>{
+const Work = () =>{
     const[project,setProject]=useState(projects[0]);
 
     const handleSlideChage=(swiper)=>{
@@ -167,4 +167,4 @@ const work = () =>{
         </motion.section>
     )
 }
-export default work;
+export default Work;
