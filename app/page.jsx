@@ -24,14 +24,21 @@ const Home = () =>{
             I am doing coding challenges and competitive programming. 
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
+            <Button
               variant="outline"
               size="lg"
-              className="Uppercase flex items-center gap-2"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl"/>
-              </Button>
+              className="uppercase flex items-center gap-2"
+            >
+            <a
+              href="https://raw.githubusercontent.com/nafiulhaqueinan/Portfolio_site/99587715c24cfd3816aa0e49aee94d7646d3ec04/public/CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            ><span>Download CV</span>
+            <FiDownload className="text-xl" />
+            </a>
+            </Button>
+
               <div className="mb-8 xl:mb-0">
                 <Social 
                 containerStyles={"flex gap-6"}
