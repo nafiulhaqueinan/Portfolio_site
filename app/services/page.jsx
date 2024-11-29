@@ -9,7 +9,7 @@ const services=[
         title:"Data Analysis & Visualization",
         description:
         "Deliver insights from complex datasets by using data science and visualization tools to identify trends, anomalies, and actionable findings.",
-        href:""
+        href:"/contact"
         
     },
     {
@@ -17,7 +17,7 @@ const services=[
         title:"Machine Learning Model Development",
         description:
         "Build and deploy machine learning models that enhance data-driven decision-making for predictive analysis and automation",
-        href:""
+        href:"/contact"
         
     },
     {
@@ -25,7 +25,7 @@ const services=[
         title:"Full-Stack Web Development",
         description:
         "Develop responsive, high-performance websites and applications using advanced web technologies and .NET expertise.",
-        href:""
+        href:"/contact"
         
     },
     {
@@ -33,7 +33,7 @@ const services=[
         title:"Product Management Consulting",
         description:
         "Guide early-stage product development with a data-driven approach, aligning project objectives with user needs and market trends.",
-        href:""
+        href:"/contact"
         
     },
     {
@@ -41,7 +41,7 @@ const services=[
         title:"Portfolio & Professional Branding",
         description:
         "Assist fellow professionals in building a strong online presence, creating portfolios that showcase skills and projects effectively.",
-        href:""
+        href:"/contact"
         
     },
 ];

@@ -26,8 +26,8 @@ const projects=[
         Description:"A VScode dark theme Name Angry-Dark Available on VScode Theme Store ",
         stack:[{name: "CSS"},{name: "JavaScript"}],
         image: "/assets/work/vs.jpg",
-        live:"#",
-        github:"#" ,
+        live:"https://github.com/nafiulhaqueinan/VS-Theme/tree/main/angry-dark",
+        github:"https://github.com/nafiulhaqueinan/VS-Theme/tree/main/angry-dark" ,
     },
 
     {
@@ -36,8 +36,8 @@ const projects=[
         Description:"A Chess Engine with C++ with ELO 1200-1400 ",
         stack:[{name: "C++"},{name: "Arena Chess GUI"}],
         image: "/assets/work/1.jpg",
-        live:"#",
-        github:"#" ,
+        live:"https://github.com/nafiulhaqueinan/Naf_1o",
+        github:"https://github.com/nafiulhaqueinan/Naf_1o" ,
     },
 
     {
@@ -46,8 +46,8 @@ const projects=[
         Description:"A Advance Github Profile with auto detection browser theme and change itself",
         stack:[{name: "CSS"},{name: "JavaScript"},{name: "Bash"},{name: "Frontend"}],
         image: "/assets/work/github.jpg",
-        live:"#",
-        github:"#" ,
+        live:"https://github.com/nafiulhaqueinan",
+        github:"https://github.com/nafiulhaqueinan/nafiulhaqueinan" ,
     },
 
     {
@@ -56,8 +56,8 @@ const projects=[
         Description:"A Music Recommendation System application Proposal  ",
         stack:[{name: "XP MODEL"},{name: "Spiral MODEL"}],
         image: "/assets/work/music.jpg",
-        live:"#",
-        github:"#" ,
+        live:"https://github.com/nafiulhaqueinan/Music-recommendation-application",
+        github:"https://github.com/nafiulhaqueinan/Music-recommendation-application" ,
     },
 ];
 
