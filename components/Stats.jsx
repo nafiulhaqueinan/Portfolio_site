@@ -25,12 +25,14 @@ const stats = [
   },
 ];
 
-
 const Stats = () => {
+  const youtubeVideoLink = "https://www.youtube.com/embed/f6rxoc2v99A";
+
   return (
     <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
       <div className="container mx-auto">
-        <div className="flex flex-wrap gap-6 max-w-[80vm] mx-auto xl:max-w-none">
+        {/* Statistics Section */}
+        <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
           {stats.map((item, index) => {
             return (
               <div
@@ -55,6 +57,22 @@ const Stats = () => {
               </div>
             );
           })}
+        </div>
+
+        {/* Video Section */}
+        <div className="mt-8">
+          <h2 className="text-center text-xl font-bold text-white/80 mb-6">
+            Watch the Video
+          </h2>
+          <div className="relative w-full max-w-5xl mx-auto" style={{ paddingBottom: '56.25%', height: 0 }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-md shadow-lg"
+              src={youtubeVideoLink}
+              frameBorder="0"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>
