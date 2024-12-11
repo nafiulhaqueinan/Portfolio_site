@@ -30,7 +30,7 @@ const Home = () =>{
               className="uppercase flex items-center gap-2"
             >
             <a
-              href="https://raw.githubusercontent.com/nafiulhaqueinan/Portfolio_site/99587715c24cfd3816aa0e49aee94d7646d3ec04/public/CV.pdf"
+              href="https://raw.githubusercontent.com/nafiulhaqueinan/Portfolio_site/fa5a76eaae399ec63b14a8fc75a9bcdf80082634/public/Nafiul%20Haque.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
