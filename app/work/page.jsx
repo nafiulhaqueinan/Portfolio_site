@@ -59,6 +59,24 @@ const projects=[
         live:"https://github.com/nafiulhaqueinan/Music-recommendation-application",
         github:"https://github.com/nafiulhaqueinan/Music-recommendation-application" ,
     },
+    // {
+    //     num:"05",
+    //     category:"Software Development",
+    //     Description:"A Music Recommendation System application Proposal  ",
+    //     stack:[{name: "XP MODEL"},{name: "Spiral MODEL"}],
+    //     image: "/assets/work/music.jpg",
+    //     live:"https://github.com/nafiulhaqueinan/Music-recommendation-application",
+    //     github:"https://github.com/nafiulhaqueinan/Music-recommendation-application" ,
+    // },
+    // {
+    //     num:"06",
+    //     category:"Software Development",
+    //     Description:"A Music Recommendation System application Proposal  ",
+    //     stack:[{name: "XP MODEL"},{name: "Spiral MODEL"}],
+    //     image: "/assets/work/music.jpg",
+    //     live:"https://github.com/nafiulhaqueinan/Music-recommendation-application",
+    //     github:"https://github.com/nafiulhaqueinan/Music-recommendation-application" ,
+    // },
 ];
 
 const Work = () =>{
