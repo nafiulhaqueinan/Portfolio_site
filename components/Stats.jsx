@@ -60,7 +60,7 @@ const Stats = () => {
         </div>
 
         {/* Video Section */}
-        <div className="mt-8">
+        {/* <div className="mt-8">
           <h2 className="text-center text-xl font-bold text-white/80 mb-6">
             Watch the Video
           </h2>
@@ -73,7 +73,7 @@ const Stats = () => {
               allowFullScreen
             ></iframe>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
