@@ -26,7 +26,7 @@ const stats = [
 ];
 
 const Stats = () => {
-  const youtubeVideoLink = "https://www.youtube.com/embed/f6rxoc2v99A";
+  //const youtubeVideoLink = "https://www.youtube.com/embed/f6rxoc2v99A";
 
   return (
     <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">

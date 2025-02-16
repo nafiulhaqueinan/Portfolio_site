@@ -59,8 +59,17 @@ const projects=[
         live:"https://github.com/nafiulhaqueinan/Music-recommendation-application",
         github:"https://github.com/nafiulhaqueinan/Music-recommendation-application" ,
     },
+    {
+        num:"05",
+        category:"PHP WEB Development",
+        Description:"SnackSnap - An intuitive online snack ordering system that connects users with their favorite dishes and restaurants  ",
+        stack:[{name: "PHP"},{name: "JavaScript"},{name: "Ajex"},{name: "Bootstrap"}],
+        image: "/assets/work/Snacksnap.png",
+        live:"https://github.com/nafiulhaqueinan/SnackSnap-",
+        github:"https://github.com/nafiulhaqueinan/SnackSnap-" ,
+    },
     // {
-    //     num:"05",
+    //     num:"07",
     //     category:"Software Development",
     //     Description:"A Music Recommendation System application Proposal  ",
     //     stack:[{name: "XP MODEL"},{name: "Spiral MODEL"}],
@@ -69,7 +78,7 @@ const projects=[
     //     github:"https://github.com/nafiulhaqueinan/Music-recommendation-application" ,
     // },
     // {
-    //     num:"06",
+    //     num:"08",
     //     category:"Software Development",
     //     Description:"A Music Recommendation System application Proposal  ",
     //     stack:[{name: "XP MODEL"},{name: "Spiral MODEL"}],
@@ -77,6 +86,7 @@ const projects=[
     //     live:"https://github.com/nafiulhaqueinan/Music-recommendation-application",
     //     github:"https://github.com/nafiulhaqueinan/Music-recommendation-application" ,
     // },
+
 ];
 
 const Work = () =>{
